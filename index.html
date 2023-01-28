@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en-US"><head><!-- Created by Artisteer v4.1.0.59861 -->
+    <meta charset="utf-8">
+    <title>Home</title>
+    <meta name="viewport" content="initial-scale = 1.0, maximum-scale = 1.0, user-scalable = no, width = device-width">
+
+    <!--[if lt IE 9]><script src="https://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+    <link rel="stylesheet" href="style.css" media="screen">
+    <!--[if lte IE 7]><link rel="stylesheet" href="style.ie7.css" media="screen" /><![endif]-->
+    <link rel="stylesheet" href="style.responsive.css" media="all">
+<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Arvo|PT+Sans&amp;subset=latin">
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <script src="jquery.js"></script>
+    <script src="script.js"></script>
+    <script src="script.responsive.js"></script>
+
+
+
+<script>jQuery(function($) {
+    'use strict';
+    if ($.fn.slider) {
+        $(".art-slidecontainerffc5a").each(function () {
+            var slideContainer = $(this), tmp;
+            var inner = $(".art-slider-inner", slideContainer);
+            var helper = null;
+
+            if ($.support.transition) {
+                helper = new BackgroundHelper();
+                helper.init("fade", "next", $(".art-slide-item", inner).first().css($.support.transition.prefix + "transition-duration"));
+                inner.children().each(function () {
+                    helper.processSlide($(this));
+                });
+
+            }
+
+
+            inner.children().eq(0).addClass("active");
+            slideContainer.slider({
+                pause: 2600,
+                speed: 600,
+                repeat: true,
+                animation: "fade",
+                direction: "next",
+                navigator: slideContainer.siblings(".art-slidenavigatorffc5a"),
+                helper: helper                
+            });
+        });
+    }
+});
+</script><style>.art-content .art-postcontent-0 .layout-item-0 { padding-right: 10px;padding-left: 10px;  }
+.ie7 .art-post .art-layout-cell {border:none !important; padding:0 !important; }
+.ie6 .art-post .art-layout-cell {border:none !important; padding:0 !important; }
+
+.art-slidecontainerffc5a {
+    position: relative;
+        width: 615px;
+    height: 384px;
+        }
+
+.art-slidecontainerffc5a .art-slide-item
+{
+
+}
+
+
+
+.art-slidecontainerffc5a .art-slide-item {
+    -webkit-transition: 600ms ease-in-out opacity;
+    -moz-transition: 600ms ease-in-out opacity;
+    -ms-transition: 600ms ease-in-out opacity;
+    -o-transition: 600ms ease-in-out opacity;
+    transition: 600ms ease-in-out opacity;
+    position: absolute;
+    display: none;
+	left: 0;
+	top: 0;
+	opacity: 0;
+    width:  100%;
+    height: 100%;
+}
+
+.art-slidecontainerffc5a .active, .art-slidecontainerffc5a .next, .art-slidecontainerffc5a .prev {
+    display: block;
+}
+
+.art-slidecontainerffc5a .active {
+    opacity: 1;
+}
+
+.art-slidecontainerffc5a .next, .art-slidecontainerffc5a .prev {
+    width: 100%;
+}
+
+.art-slidecontainerffc5a .next.forward, .art-slidecontainerffc5a .prev.back {
+    opacity: 1;
+}
+
+.art-slidecontainerffc5a .active.forward {
+    opacity: 0;
+}
+
+.art-slidecontainerffc5a .active.back {
+    opacity: 0;
+}
+
+
+.art-slideffc5a0 {
+    background-image:  url('images/slideffc5a0.jpg');
+        background-size:  100%;
+        background-position:  center top;
+    background-repeat: no-repeat;
+}
+.art-slideffc5a1 {
+    background-image:  url('images/slideffc5a1.jpg');
+        background-size:  100%;
+        background-position:  center top;
+    background-repeat: no-repeat;
+}
+.art-slideffc5a2 {
+    background-image:  url('images/slideffc5a2.jpg');
+        background-size:  100%;
+        background-position:  center top;
+    background-repeat: no-repeat;
+}
+
+
+.art-slidenavigatorffc5a {
+  display: inline-block;
+  position: absolute;
+  direction: ltr !important;
+  top: 0px;
+  left: 44.72%;
+  z-index: 101;
+  line-height: 0 !important;
+  -webkit-background-origin: border !important;
+  -moz-background-origin: border !important;
+  background-origin: border-box !important;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  text-align: center;
+    white-space: nowrap;
+    }
+.art-slidenavigatorffc5a
+{
+background: #D4CCAA;background: transparent;background: transparent;background: transparent;background: transparent;background: transparent;background: transparent;-svg-background: transparent;
+
+
+
+padding:15px;
+
+
+
+
+
+}
+.art-slidenavigatorffc5a > a
+{
+background: #AA9955;background: #AA9955;background: #AA9955;background: #AA9955;background: #AA9955;background: #AA9955;background: #AA9955;-svg-background: #AA9955;
+-webkit-border-radius:20%;-moz-border-radius:20%;border-radius:20%;
+
+
+
+margin:0 10px 0 0;
+
+width: 5px;
+
+height: 5px;
+}
+.art-slidenavigatorffc5a > a.active
+{
+background: #D2AB1E;background: #D2AB1E;background: #D2AB1E;background: #D2AB1E;background: #D2AB1E;background: #D2AB1E;background: #D2AB1E;-svg-background: #D2AB1E;
+-webkit-border-radius:20%;-moz-border-radius:20%;border-radius:20%;
+
+border:1px solid #705B10;
+
+margin:0 10px 0 0;
+
+width: 5px;
+
+height: 5px;
+}
+.art-slidenavigatorffc5a > a:hover
+{
+background: #52594F;background: linear-gradient(top, #52594F 0, #545C51 40%, #545C51 80%, #3B413A 100%) no-repeat;background: -webkit-linear-gradient(top, #52594F 0, #545C51 40%, #545C51 80%, #3B413A 100%) no-repeat;background: -moz-linear-gradient(top, #52594F 0, #545C51 40%, #545C51 80%, #3B413A 100%) no-repeat;background: -o-linear-gradient(top, #52594F 0, #545C51 40%, #545C51 80%, #3B413A 100%) no-repeat;background: -ms-linear-gradient(top, #52594F 0, #545C51 40%, #545C51 80%, #3B413A 100%) no-repeat;background: linear-gradient(top, #52594F 0, #545C51 40%, #545C51 80%, #3B413A 100%) no-repeat;-svg-background: linear-gradient(top, #52594F 0, #545C51 40%, #545C51 80%, #3B413A 100%) no-repeat;
+-webkit-border-radius:20%;-moz-border-radius:20%;border-radius:20%;
+
+border:1px solid #707A6C;
+
+margin:0 10px 0 0;
+
+width: 5px;
+
+height: 5px;
+}
+
+</style></head>
+<body>
+<div id="art-main">
+<header class="art-header">
+
+
+    <div class="art-shapes">
+<div class="art-object1381232481" data-left="0%"></div>
+
+            </div>
+<h1 class="art-headline" data-left="93.07%">
+    <a href="#">Çözüm Teknik</a>
+</h1>
+<h2 class="art-slogan" data-left="91.43%">Site Sloganı Yazın</h2>
+
+
+
+
+                        
+                    
+</header>
+<nav class="art-nav">
+    <div class="art-nav-inner">
+    <ul class="art-hmenu"><li><a href="ana-sayfa.html" class="active">Ana Sayfa</a><ul class="active"><li><a href="ana-sayfa/new-page.html">Subpage 1</a></li><li><a href="ana-sayfa/new-page-2.html">Subpage 2</a></li><li><a href="ana-sayfa/new-page-3.html">Subpage 3</a></li></ul></li><li><a href="Iletisim.html">İletişim</a></li></ul> 
+        </div>
+    </nav>
+<div class="art-sheet clearfix">
+            <div class="art-layout-wrapper">
+                <div class="art-content-layout">
+                    <div class="art-content-layout-row">
+                        <div class="art-layout-cell art-content"><article class="art-post art-article">
+                                <div class="art-postmetadataheader">
+                                        <h2 class="art-postheader"><span class="art-postheadericon">Home</span></h2>
+                                                            
+                                    </div>
+                                <div class="art-postcontent art-postcontent-0 clearfix"><div class="art-content-layout">
+    <div class="art-content-layout-row">
+    <div class="art-layout-cell layout-item-0" style="width: 100%" >
+<div id="ffc5a" style="position: relative; display: inline-block; z-index: 0; margin: 0px;  border-width: 0px;  " class="art-collage">
+<div class="art-slider art-slidecontainerffc5a" data-width="615" data-height="384">
+    <div class="art-slider-inner">
+<div class="art-slide-item art-slideffc5a0">
+
+</div>
+<div class="art-slide-item art-slideffc5a1">
+
+</div>
+<div class="art-slide-item art-slideffc5a2">
+
+</div>
+
+    </div>
+</div>
+<div class="art-slidenavigator art-slidenavigatorffc5a" data-left="44.72">
+<a href="#" class="art-slidenavigatoritem"></a><a href="#" class="art-slidenavigatoritem"></a><a href="#" class="art-slidenavigatoritem"></a>
+</div>
+
+
+
+    </div>
+
+    </div>
+    </div>
+</div>
+<div class="art-content-layout">
+    <div class="art-content-layout-row">
+    <div class="art-layout-cell layout-item-0" style="width: 50%" >
+        <h3>Gallery</h3><p><span style="font-weight: bold;">Vel egestas sed nascetur viverra amet ornare turpis egestas ligula.</span></p><ul>
+        <li><a href="#">Odio praesent fusce sagittis vitae.</a><br>Pellentesque sodales leo sagittis.</li>
+        <li><a href="#">Neque urna nam dolor pede rutrum.</a><br>Cursus tempus odio ridiculus tellus.</li>
+        <li><a href="#">Dui ut placerat porta sem fringilla.</a><br>Aliquam orci dolor eros praesent a.</li>
+        </ul>
+    </div><div class="art-layout-cell layout-item-0" style="width: 50%" >
+        <h3>New Methods</h3><div class="image-caption-wrapper" style="width: 100%"><img src="images/53d1a.jpg" style="width: 100%; max-width:508px" alt="an image" class="art-lightbox"><p>Image by Flickr/</p></div><blockquote style="margin: 10px 0">Et nulla sollicitudin. Sit sagittis vitae praesent fermentum enim curabitur curabitur sed rhoncus. Vitae et faucibus pellentesque nec aenean laoreet nonummy.</blockquote>
+    </div>
+    </div>
+</div>
+<div class="art-content-layout">
+    <div class="art-content-layout-row">
+    <div class="art-layout-cell layout-item-0" style="width: 100%" >
+        <h3>Who We Are</h3><p><span style="font-weight: bold;">Massa ligula nam rutrum dapibus semper aliquam turpis ante nulla.</span></p><ul>
+        <li><span style="font-weight: bold;">Nunc neque ultrices ac. Posuere gravida nec phasellus arcu aenean neque quam eleifend maecenas dui.</span><br>Elementum varius urna tempus mollis. Metus viverra fusce in.</li>
+        <li><span style="font-weight: bold;">Pretium non habitant. Morbi dapibus vivamus aliquam nec enim tempus magna quam eget vel eros nec.</span><br>Id suspendisse pede amet phasellus. Nibh fermentum et arcu.</li>
+        <li><span style="font-weight: bold;">Vulputate consectetuer. Praesent ultrices vestibulum curae velit dolor amet aliquam nullam egestas.</span><br>Quis tristique amet mollis at augue. Neque rutrum erat nisi.</li>
+        <li><span style="font-weight: bold;">Ut ut morbi eu leo est. Elit nisl in viverra orci ut per orci arcu lacinia phasellus iaculis neque.</span><br>Ut cras elit lectus egestas donec. Nisi in velit quam sit.</li>
+        </ul><p><a href="#">Read more</a></p>
+    </div>
+    </div>
+</div>
+</div>
+
+
+</article></div>
+                        <div class="art-layout-cell art-sidebar1"><div class="art-vmenublock clearfix">
+        <div class="art-vmenublockheader">
+            <h3 class="t">VMenu</h3>
+        </div>
+        <div class="art-vmenublockcontent">
+<ul class="art-vmenu"><li><a href="ana-sayfa.html" class="active">Ana Sayfa</a><ul class="active"><li><a href="ana-sayfa/new-page.html">Subpage 1</a></li><li><a href="ana-sayfa/new-page-2.html">Subpage 2</a></li><li><a href="ana-sayfa/new-page-3.html">Subpage 3</a></li></ul></li><li><a href="Iletisim.html">İletişim</a></li></ul>
+                
+        </div>
+</div><div class="art-block clearfix">
+        <div class="art-blockheader">
+            <h3 class="t">Block</h3>
+        </div>
+        <div class="art-blockcontent"><p>Enter Block content here...</p>
+<br>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam pharetra, tellus sit amet congue vulputate, nisi erat iaculis nibh, vitae feugiat sapien ante eget mauris.</p></div>
+</div></div>
+                    </div>
+                </div>
+            </div>
+    </div>
+<footer class="art-footer">
+  <div class="art-footer-inner">
+<p><a href="#">Link1</a> | <a href="#">Link2</a> | <a href="#">Link3</a></p>
+<p>Copyright © 2023. All Rights Reserved.</p>
+    <p class="art-page-footer">
+        <span id="art-licence-links">Images by Flickr/,Cristiano Betta</span>
+    </p>
+  </div>
+</footer>
+
+</div>
+
+
+</body></html>
